@@ -1,7 +1,12 @@
 package com.douzone.hellospring.controller;
 
+import java.io.IOException;
+import java.io.Writer;
+
 import javax.print.attribute.HashPrintRequestAttributeSet;
 import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
 
 import org.springframework.http.HttpRequest;
 import org.springframework.stereotype.Controller;
@@ -64,6 +69,18 @@ public class HelloController {
 		System.out.println("hello6() called");
 		return "redirect:/hello";
 	}
-
+	
+	
+	@RequestMapping("/hello7")
+	public void hello7(HttpServletRequest req, HttpServletResponse resp, 
+			Writer out, HttpSession session) throws IOException {
+		
+		String no = req.getParameter("n");
+		
+		out.write("<h1>Hello World</h1>");
+	}
+	
+	
+	
 	
 }
