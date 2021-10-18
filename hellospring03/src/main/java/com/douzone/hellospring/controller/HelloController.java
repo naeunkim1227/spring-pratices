@@ -13,6 +13,13 @@ import org.springframework.web.servlet.ModelAndView;
 @Controller
 public class HelloController {
 	
+	
+	public void a() {
+		
+		
+	}
+	
+	
 	@RequestMapping("/hello")
 	public String hello() {
 		
@@ -32,7 +39,6 @@ public class HelloController {
 		//mav에 데이터와 뷰저장
 		mav.addObject("name",name);
 		mav.setViewName("/WEB-INF/views/hello3.jsp");
-		
 		
 		return mav; 
 	}
