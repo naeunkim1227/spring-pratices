@@ -29,7 +29,7 @@
 	<c:forEach items="${list}" var="vo" varStatus="status">
 			
 		<tr>
-			<td>[${status.index}]</td>
+			<td>[${count -status.index}]</td>
 			<td>${vo.name }</td>
 			<td>${vo.regDate }</td>
 			<td><a href="${pageContext.request.contextPath }/delete?no=${vo.no}">삭제</a></td>
