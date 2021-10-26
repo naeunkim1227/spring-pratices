@@ -41,7 +41,26 @@
 		<property name="name" value="뽀로로"/>
 	</bean>
 	
+	<!--DI하기  -->
+	<bean id="friend" class="com.douzone.container.user.Friend">
+		<constructor-arg value="뽀로로"/>
+	</bean>
+	<bean id="user6" class="com.douzone.container.user.User">
+		<property name="no" value="1"/>
+		<property name="name" value="뽀로로"/>
+		<property name="friend" ref="friend"/>
+	</bean>
 	
 	
-
+	<!-- setter를 사용한 List 세팅하기 -->
+	<bean id="user7" class="com.douzone.container.user.User">
+		<property name="no" value="2"/>
+		<property name="name" value="뽀로로"/>
+		<property name="friends">
+			<list>
+				<value>아이언맨</value>			
+				<value>완다 비전</value>			
+			</list>
+		</property>
+	</bean>
 </beans>

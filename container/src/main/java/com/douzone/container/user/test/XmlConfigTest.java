@@ -67,7 +67,14 @@ public class XmlConfigTest {
 		user = ac.getBean("user5", User.class);
 		System.out.println(user);
 		
+		//setter를 사용한 빈 가져오기2(DI)
+		user = ac.getBean("user6", User.class);
+		System.out.println(user);
+
 		
+		//setter를 사용한 빈 가져오기2(List Property)
+		user = ac.getBean("user7", User.class);
+		System.out.println(user);
 		
 	}
 	
