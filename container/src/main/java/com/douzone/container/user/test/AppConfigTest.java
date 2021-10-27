@@ -23,6 +23,8 @@ public class AppConfigTest {
 		
 		User user = ac.getBean(User.class);
 		System.out.println(user);
+		
+		
 	}
 	
 	//Java Config 02
@@ -34,7 +36,7 @@ public class AppConfigTest {
 				new AnnotationConfigApplicationContext("com.douzone.container.config.user");
 		
 		User user = ac.getBean(User.class);
-		System.out.println(user);
+		//System.out.println(user);
 	}
 	
 }

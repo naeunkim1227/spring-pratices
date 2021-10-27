@@ -144,9 +144,13 @@ public class DVDPlayerXmlConfigTest {
 	public void testDVD10() {
 		assertNotNull(dvd10);
 	}
-	/*
+	
 	@Test
 	public void testPlay1() {
+		System.out.println("-------------------------------------");
+		dvdPlayer3.play();
+		System.out.println("-------------------------------------");
+
 		dvdPlayer1.play();
 		assertEquals("Playing Movie MARVEL's IronMan", systemOutRule.getLog().replace("\r\n", "").replace("\n", ""));
 	}
@@ -174,5 +178,5 @@ public class DVDPlayerXmlConfigTest {
 		dvdPlayer5.play();
 		assertEquals("Playing Movie MARVEL's IronMan", systemOutRule.getLog().replace("\r\n", "").replace("\n", ""));
 	}
-	*/
+	
 }
