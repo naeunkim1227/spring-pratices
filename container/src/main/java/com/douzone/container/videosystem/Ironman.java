@@ -1,7 +1,7 @@
-package com.douzone.container.config.videosystem;
+package com.douzone.container.videosystem;
 
-public class Avengers implements DigitalVideoDisc{
-	private String title = "Avengers";
+public class Ironman implements DigitalVideoDisc{
+	private String title = "Ironman";
 	private String studio = "MARVEL";
 	
 	@Override
